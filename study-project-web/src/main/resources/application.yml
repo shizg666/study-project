@@ -1,0 +1,11 @@
+
+spring:
+  application:
+    name: study-project
+  profiles:
+    active: local
+
+server:
+  port: 8088
+  servlet:
+    context-path: /study
