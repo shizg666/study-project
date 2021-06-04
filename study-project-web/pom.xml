@@ -3,8 +3,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <artifactId>study-project-parent</artifactId>
         <groupId>cn.shizg</groupId>
+        <artifactId>study-project</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
@@ -13,11 +13,8 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>study-project-web</name>
     <description>Demo project for Spring Boot</description>
-    <properties>
-        <java.version>1.8</java.version>
-    </properties>
-    <dependencies>
 
+    <dependencies>
         <dependency>
             <groupId>cn.shizg</groupId>
             <artifactId>study-project-web-util</artifactId>

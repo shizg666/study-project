@@ -1,0 +1,11 @@
+
+spring:
+  application:
+    name: study-project-oauth
+  profiles:
+    active: local
+
+server:
+  port: 8085
+  servlet:
+    context-path: /oauth

@@ -1,10 +1,10 @@
-package cn.shizg.study.project.gateway;
+package cn.shizg.study.project.oauth.server;
 
 import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class StudyProjectGatewayApplicationTests {
+class StudyProjectOauthServerApplicationTests {
 
     @Test
     void contextLoads() {

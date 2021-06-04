@@ -9,25 +9,34 @@
     </parent>
 
     <groupId>cn.shizg</groupId>
-    <artifactId>study-project-gateway</artifactId>
+    <artifactId>study-project-oauth-server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>study-project-gateway</name>
+    <name>study-project-oauth-server</name>
     <description>Demo project for Spring Boot</description>
 
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-oauth2</artifactId>
+            <exclusions>
+                <exclusion>
+                    <artifactId>kotlin-stdlib</artifactId>
+                    <groupId>org.jetbrains.kotlin</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
         <dependency>
             <groupId>cn.shizg</groupId>
             <artifactId>study-project-web-util</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
-        <!-- gateway -->
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-gateway</artifactId>
+            <groupId>cn.shizg</groupId>
+            <artifactId>study-project-util</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
-
-
     </dependencies>
 
     <build>
