@@ -63,7 +63,6 @@ public class OAuth2Config extends AuthorizationServerConfigurerAdapter {
                 .authorizedGrantTypes("refresh_token", "authorization_code", "password")
                 //token有效期
                 .accessTokenValiditySeconds(3600)
-
                 //scopes：用来限制客户端访问的权限，在换取的 token 的时候会带上 scope 参数，只有在 scopes 定义内的，才可以正常换取 token。
                 .scopes("all")
                 .and()
